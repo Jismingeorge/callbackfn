@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="callbackfunction.css">
+</head>
+<body>
+    <h1>CALLBACK FUNCTION</h1>
+    <p>In JavaScript, functions are objects. Can we pass objects to functions as parameters? Yes.
+
+        So, we can also pass functions as parameters to other functions and call them inside the outer functions.</p>
+        <h1>Why do we need Callback Functions?</h1> 
+    <p>JavaScript runs code sequentially in top-down order. However, there are some cases that code runs (or must run) after something else happens and also not sequentially. This is called asynchronous programming.
+
+Callbacks make sure that a function is not going to run before a task is completed but will run right after the task has completed. It helps us develop asynchronous JavaScript code and keeps us safe from problems and errors.
+
+In JavaScript, the way to create a callback function is to pass it as a parameter to another function, and then to call it back right after something has happened or some task is completed.</p>
+ <h3>Here's an example of a callback function in JavaScript:</h3>
+ <img src="./callbkfncode.JPG"class="center">
+ <h3>Output:</h3>
+ <img src="./callbkfnout.JPG"class="center">
+ <h3>In this code:</h3>
+ <ol>
+    <li>The calculateSum function takes two parameters: numbers, an array of numbers, and callback, a callback function that will be called with the result.</li>
+    <li>Inside the calculateSum function, it first checks if the numbers input is an array. If it's not, it calls the callback with an error message and a null result.</li>
+    <li>If numbers is an array, it uses the reduce method to calculate the sum of the numbers in the array.</li>
+    <li>Finally, it calls the callback function with the calculated sum as the result. If there is an error (e.g., the input is not an array), it passes the error message to the callback.<br><br><br>
+        In the usage example, we call the calculateSum function with an array of numbers and provide a callback function to handle the result. The callback function logs the sum or any errors to the console.</li>
+  </ol>
+
+      
+</body>
+</html>

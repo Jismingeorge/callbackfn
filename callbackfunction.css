@@ -1,0 +1,27 @@
+
+body
+{
+    background-color: rgb(38, 178, 188);
+}
+h1
+{
+  text-align:center;
+  font-size:60px;
+}
+p
+{
+  font-size:40px;
+}
+h3
+{
+  font-size:60px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  li{
+    font-size:40px;
+  }
